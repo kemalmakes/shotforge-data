@@ -1,0 +1,228 @@
+{
+ "version": 1,
+ "updated": "2026-11-12",
+ "sources": [
+  {
+   "id": "flowtv",
+   "platform": "Veo",
+   "title": "Google Flow TV",
+   "url": "https://labs.google/flow/tv",
+   "desc": {
+    "en": "Endless channels of Veo-generated clips. Open any clip to see the exact prompt behind it. Free, no account needed.",
+    "ar": "قنوات لا تنتهي من مقاطع Veo. افتح أي مقطع لترى البرومبت الذي صُنع به بالضبط. مجاني ودون حساب."
+   },
+   "tags": [
+    "video + prompt",
+    "free"
+   ]
+  },
+  {
+   "id": "kling3guide",
+   "platform": "Kling",
+   "title": "Kling VIDEO 3.0 – Official User Guide",
+   "url": "https://home.kling.ai/quickstart/klingai-video-3-model-user-guide",
+   "desc": {
+    "en": "Kling's own examples of multi-shot scenes, dialogue and native audio, each shown with its prompt and the generated video.",
+    "ar": "أمثلة Kling الرسمية على المشاهد متعددة اللقطات والحوار والصوت المدمج، وكل مثال معروض مع برومبته والفيديو الناتج."
+   },
+   "tags": [
+    "video + prompt",
+    "multi-shot",
+    "official"
+   ]
+  },
+  {
+   "id": "runwaylib",
+   "platform": "Runway",
+   "title": "Runway Academy – Prompt Library",
+   "url": "https://academy.runwayml.com/prompt-library",
+   "desc": {
+    "en": "A library of camera terms, each with a text-to-video prompt and its Gen-4.5 output. Great for learning camera language.",
+    "ar": "مكتبة لمصطلحات الكاميرا، لكل مصطلح برومبت ونتيجته من Gen-4.5. ممتازة لتعلّم لغة الكاميرا."
+   },
+   "tags": [
+    "video + prompt",
+    "camera",
+    "official"
+   ]
+  },
+  {
+   "id": "veoguide",
+   "platform": "Veo",
+   "title": "The Ultimate Prompting Guide for Veo 3.1",
+   "url": "https://cloud.google.com/blog/products/ai-machine-learning/ultimate-prompting-guide-for-veo-3-1",
+   "desc": {
+    "en": "Google Cloud's official guide: cinematography, audio and image-to-video techniques, with example prompts and results.",
+    "ar": "دليل Google Cloud الرسمي: التصوير السينمائي والصوت وتحويل الصورة إلى فيديو، مع أمثلة برومبتات ونتائجها."
+   },
+   "tags": [
+    "guide",
+    "audio",
+    "official"
+   ]
+  },
+  {
+   "id": "falkling",
+   "platform": "Kling",
+   "title": "Kling 3.0 Prompting Guide (fal)",
+   "url": "https://blog.fal.ai/kling-3-0-prompting-guide",
+   "desc": {
+    "en": "Directing-style prompts for Kling 3.0, including multi-character dialogue, with playable example videos.",
+    "ar": "برومبتات بأسلوب الإخراج لـ Kling 3.0، منها حوارات متعددة الشخصيات، مع فيديوهات أمثلة."
+   },
+   "tags": [
+    "video + prompt",
+    "dialogue"
+   ]
+  },
+  {
+   "id": "krearunway",
+   "platform": "Runway",
+   "title": "Runway Gen-4.5 Prompt Gallery (Krea)",
+   "url": "https://www.krea.ai/models/runway/prompt-gallery",
+   "desc": {
+    "en": "Curated Runway clips. Click a video to copy its prompt: documentary, product reveals, fly-throughs and time-lapses.",
+    "ar": "مقاطع Runway مختارة. اضغط على أي فيديو لنسخ برومبته: وثائقي، وعرض منتجات، وجولات جوية، وتايم لابس."
+   },
+   "tags": [
+    "video + prompt",
+    "gallery"
+   ]
+  }
+ ],
+ "clips": [],
+ "techniques": [
+  {
+   "id": "t1",
+   "cat": "Camera",
+   "title": "The Slow Push-In",
+   "shot": "Close-up",
+   "camera": "Slow dolly push-in",
+   "light": "Single window light",
+   "mood": "Intimate",
+   "prompt": "Slow dolly push-in toward an old man sitting alone at a kitchen table, morning light through a dusty window, steam rising from a cup of tea, shallow depth of field, 35mm lens, quiet and intimate mood, cinematic color grading.",
+   "subject": "an old man sitting alone at a kitchen table, steam rising from a cup of tea"
+  },
+  {
+   "id": "t2",
+   "cat": "Camera",
+   "title": "The Reveal Pull-Back",
+   "shot": "Extreme wide shot",
+   "camera": "Slow pull-back reveal",
+   "light": "Golden hour backlight",
+   "mood": "Epic",
+   "prompt": "Camera slowly pulls back from a close-up of a single red flower to reveal it growing alone in a vast cracked desert, golden hour, wide anamorphic lens, dust in the air, epic and lonely atmosphere.",
+   "subject": "a single red flower growing alone in a vast cracked desert, dust in the air"
+  },
+  {
+   "id": "t3",
+   "cat": "Camera",
+   "title": "FPV Drone Dive",
+   "shot": "Extreme wide shot",
+   "camera": "FPV drone dive",
+   "light": "Soft overcast daylight",
+   "mood": "Awe-inspiring",
+   "prompt": "FPV drone shot diving down a giant waterfall in a tropical jungle, mist and rainbows, fast fluid motion, ultra wide lens, vivid greens, thrilling and immersive.",
+   "subject": "a giant waterfall in a tropical jungle, mist and rainbows, vivid greens"
+  },
+  {
+   "id": "t4",
+   "cat": "Camera",
+   "title": "The Dolly Zoom",
+   "shot": "Close-up",
+   "camera": "Dolly zoom",
+   "light": "Soft studio lighting",
+   "mood": "Tense",
+   "prompt": "Dolly zoom effect on a man's face as he realizes something shocking, background stretches away while his face stays the same size, dim hallway, tense cinematic lighting, thriller mood.",
+   "subject": "a man's face as he realizes something shocking in a dim hallway"
+  },
+  {
+   "id": "t5",
+   "cat": "Lighting",
+   "title": "Neon Noir",
+   "shot": "Medium shot",
+   "camera": "Static locked-off camera",
+   "light": "Neon lights reflecting on wet surfaces",
+   "mood": "Dark and ominous",
+   "prompt": "Detective in a trench coat standing in a narrow alley at night, rain falling, pink and teal neon signs reflecting on wet ground, cigarette smoke, high contrast, film noir style.",
+   "subject": "a detective in a trench coat standing in a narrow alley at night, rain falling, cigarette smoke"
+  },
+  {
+   "id": "t6",
+   "cat": "Lighting",
+   "title": "God Rays in the Forest",
+   "shot": "Wide establishing shot",
+   "camera": "Slow drone flyover",
+   "light": "Volumetric god rays through mist",
+   "mood": "Dreamlike",
+   "prompt": "Sunlight beams cutting through tall pine trees in a misty forest at dawn, volumetric light rays, a deer slowly walking through the light, slow camera drift, magical and peaceful mood.",
+   "subject": "a deer slowly walking through tall pine trees in a misty forest at dawn"
+  },
+  {
+   "id": "t7",
+   "cat": "Lighting",
+   "title": "Candlelit Scholar",
+   "shot": "Medium close-up",
+   "camera": "Slow dolly push-in",
+   "light": "Warm candlelight",
+   "mood": "Mysterious",
+   "prompt": "Medieval scholar writing with a quill by candlelight in a stone room, flickering warm light, deep black shadows, parchment and old books, historical drama style, intimate and mysterious.",
+   "subject": "a medieval scholar writing with a quill in a stone room full of parchment and old books"
+  },
+  {
+   "id": "t8",
+   "cat": "Establishing",
+   "title": "Ancient City at Dawn",
+   "shot": "Extreme wide shot",
+   "camera": "Slow drone flyover",
+   "light": "Golden hour backlight",
+   "mood": "Epic",
+   "prompt": "Aerial establishing shot of an ancient walled city at dawn, smoke rising from chimneys, river winding through it, mountains in the background, mist in the valley, epic historical film style, slow forward drone movement.",
+   "subject": "an ancient walled city at dawn, smoke rising from chimneys, a river winding through it, mountains behind"
+  },
+  {
+   "id": "t9",
+   "cat": "Establishing",
+   "title": "Earth from Orbit",
+   "shot": "Extreme wide shot",
+   "camera": "Slow pan",
+   "light": "Golden hour backlight",
+   "mood": "Awe-inspiring",
+   "prompt": "Slow cinematic shot of planet Earth from orbit, sunrise creeping over the horizon, city lights fading on the night side, thin blue atmosphere glowing, ultra realistic, awe-inspiring mood.",
+   "subject": "planet Earth from orbit, sunrise creeping over the horizon, city lights fading on the night side"
+  },
+  {
+   "id": "t10",
+   "cat": "Documentary",
+   "title": "Archive Film Look",
+   "shot": "Wide establishing shot",
+   "camera": "Static locked-off camera",
+   "light": "Soft overcast daylight",
+   "mood": "Nostalgic",
+   "prompt": "Black and white archival-style footage of factory workers in the 1920s leaving work, film grain, slight flicker, scratches, slightly fast motion, authentic historical documentary look.",
+   "subject": "factory workers in the 1920s leaving work, black and white archival footage with flicker and scratches"
+  },
+  {
+   "id": "t11",
+   "cat": "Documentary",
+   "title": "Lost Civilization Ruins",
+   "shot": "Wide establishing shot",
+   "camera": "Slow dolly push-in",
+   "light": "Volumetric god rays through mist",
+   "mood": "Mysterious",
+   "prompt": "Slow push-in toward giant stone ruins half-buried in the jungle, carved faces covered in moss, light rays through the canopy, mist, mysterious ancient civilization atmosphere.",
+   "subject": "giant stone ruins half-buried in the jungle, carved faces covered in moss"
+  },
+  {
+   "id": "t12",
+   "cat": "Emotion",
+   "title": "The Final Look Back",
+   "shot": "Medium shot",
+   "camera": "Static locked-off camera",
+   "light": "Golden hour backlight",
+   "mood": "Melancholic",
+   "prompt": "Medium shot of a traveler at a doorway turning to look back one last time before leaving, soft backlight, dust in the air, bittersweet expression, slow motion, emotional ending shot.",
+   "subject": "a traveler at a doorway turning to look back one last time, bittersweet expression"
+  }
+ ]
+}
