@@ -1,119 +1,403 @@
 {
-  "version": 1,
-  "updated": "2026-11-12",
-  "notes": "Consumer app plans (monthly billing, USD). Credit rates are approximate, per second of generated video. Sources: vendor pricing pages and help docs as reported Sep-Nov 2026. Prices change often; confirm on each pricing page.",
-  "platforms": [
+ "version": 1,
+ "updated": "2026-11-14",
+ "notes": "Consumer app plans (monthly billing, USD). Credit rates are approximate, per second of generated video. Sources: vendor pricing pages and help docs as reported Sep-Nov 2026. Prices change often; confirm on each pricing page.",
+ "platforms": [
+  {
+   "id": "higgsfield",
+   "name": "Higgsfield",
+   "color": "#e05a33",
+   "url": "https://higgsfield.ai/pricing",
+   "features": {
+    "audio": true,
+    "chars": true,
+    "lips": true,
+    "hd": false,
+    "multi": true
+   },
+   "free": {
+    "en": "Free plan has no generation credits",
+    "ar": "الخطة المجانية بلا رصيد توليد"
+   },
+   "rollover": false,
+   "strengths": {
+    "en": "Many top models in one place (Kling, Seedance, Veo, Wan, Nano Banana) plus Cinema Studio camera presets, Soul ID characters and Speak lip-sync.",
+    "ar": "أقوى النماذج في مكان واحد (Kling وSeedance وVeo وWan وNano Banana)، مع حركات كاميرا جاهزة، وتثبيت الشخصيات Soul ID، ومزامنة الشفاه Speak."
+   },
+   "warn": {
+    "en": "Starter plan only unlocks some models; Seedance 2.x and Veo need Plus or Ultra.",
+    "ar": "خطة Starter تفتح بعض النماذج فقط؛ Seedance 2 وVeo تحتاج Plus أو Ultra."
+   },
+   "models": [
     {
-      "id": "higgsfield", "name": "Higgsfield", "color": "#e05a33", "url": "https://higgsfield.ai/pricing",
-      "features": { "audio": true, "chars": true, "lips": true, "hd": false, "multi": true },
-      "free": { "en": "Free plan has no generation credits", "ar": "الخطة المجانية بلا رصيد توليد" },
-      "rollover": false,
-      "strengths": { "en": "Many top models in one place (Kling, Seedance, Veo, Wan, Nano Banana) plus Cinema Studio camera presets, Soul ID characters and Speak lip-sync.",
-                     "ar": "أقوى النماذج في مكان واحد (Kling وSeedance وVeo وWan وNano Banana)، مع حركات كاميرا جاهزة، وتثبيت الشخصيات Soul ID، ومزامنة الشفاه Speak." },
-      "warn": { "en": "Starter plan only unlocks some models; Seedance 2.x and Veo need Plus or Ultra.", "ar": "خطة Starter تفتح بعض النماذج فقط؛ Seedance 2 وVeo تحتاج Plus أو Ultra." },
-      "models": [
-        { "name": "Kling 3.0 · 1080p", "cps": 1.5, "audio": false, "q": 4, "minPlan": 0 },
-        { "name": "Veo 3 Fast", "cps": 2.75, "audio": true, "q": 4, "minPlan": 1 },
-        { "name": "Seedance 2.0 · 720p", "cps": 4.5, "audio": false, "q": 4, "minPlan": 1 },
-        { "name": "Veo 3 · audio", "cps": 7.25, "audio": true, "q": 5, "minPlan": 1 }
-      ],
-      "plans": [
-        { "name": "Starter", "price": 19, "credits": 270 },
-        { "name": "Plus", "price": 59, "credits": 1200, "annual": 47 },
-        { "name": "Ultra", "price": 129, "credits": 3000, "annual": 99 }
-      ]
+     "name": "Kling 3.0 · 1080p",
+     "cps": 1.5,
+     "audio": false,
+     "q": 4,
+     "minPlan": 0
     },
     {
-      "id": "kling", "name": "Kling AI", "color": "#18a058", "url": "https://klingai.com/pricing",
-      "features": { "audio": true, "chars": true, "lips": true, "hd": true, "multi": false },
-      "free": { "en": "Free tier with daily credits", "ar": "خطة مجانية برصيد يومي" },
-      "rollover": false,
-      "strengths": { "en": "Excellent value. Kling 3.0 makes multi-shot scenes up to 15s with native audio, character references and native 4K.",
-                     "ar": "قيمة ممتازة. Kling 3.0 يصنع مشاهد متعددة اللقطات حتى 15 ثانية مع صوت مدمج ومرجع للشخصيات ودقة 4K أصلية." },
-      "warn": { "en": "First-month prices are discounted; renewal prices are used here.", "ar": "أسعار الشهر الأول مخفّضة؛ هنا نستخدم سعر التجديد." },
-      "models": [
-        { "name": "Kling 3.0 · 720p", "cps": 6, "audio": false, "q": 3, "minPlan": 0 },
-        { "name": "Kling 3.0 · 1080p", "cps": 8, "audio": false, "q": 4, "minPlan": 0 },
-        { "name": "Kling 3.0 · 1080p + audio", "cps": 12, "audio": true, "q": 4, "minPlan": 0 }
-      ],
-      "plans": [
-        { "name": "Standard", "price": 8.8, "credits": 660 },
-        { "name": "Pro", "price": 32.56, "credits": 3000 },
-        { "name": "Premier", "price": 80.96, "credits": 8000 },
-        { "name": "Ultra", "price": 159.99, "credits": 26000 }
-      ]
+     "name": "Veo 3 Fast",
+     "cps": 2.75,
+     "audio": true,
+     "q": 4,
+     "minPlan": 1
     },
     {
-      "id": "flow", "name": "Google Flow (Veo)", "color": "#3b7bea", "url": "https://labs.google/fx/tools/flow",
-      "features": { "audio": true, "chars": true, "lips": true, "hd": true, "multi": false },
-      "free": { "en": "50 free credits every day", "ar": "50 رصيداً مجانياً كل يوم" },
-      "rollover": false,
-      "strengths": { "en": "Veo 3.1 with native sound and dialogue, Scenebuilder, ingredients-to-video for consistency, extend and object editing. Ultra halves Lite/Fast costs.",
-                     "ar": "Veo 3.1 بصوت وحوار مدمجين، وأداة Scenebuilder، وتثبيت العناصر بين المشاهد، وتمديد اللقطات وتعديل العناصر. خطة Ultra تخفّض تكلفة Lite وFast للنصف." },
-      "warn": { "en": "Plan includes Gemini and storage, not only video. Clips are up to 8 seconds.", "ar": "الخطة تشمل Gemini والتخزين أيضاً. المقاطع حتى 8 ثوانٍ." },
-      "models": [
-        { "name": "Veo 3.1 Lite", "cps": 1.25, "audio": true, "q": 3, "minPlan": 0, "ultraHalf": true },
-        { "name": "Veo 3.1 Fast", "cps": 2.5, "audio": true, "q": 4, "minPlan": 0, "ultraHalf": true },
-        { "name": "Veo 3.1 Quality", "cps": 12.5, "audio": true, "q": 5, "minPlan": 0 }
-      ],
-      "plans": [
-        { "name": "Google AI Pro", "price": 19.99, "credits": 1000 },
-        { "name": "Google AI Ultra", "price": 99.99, "credits": 10000, "ultra": true },
-        { "name": "Google AI Ultra 20x", "price": 199.99, "credits": 25000, "ultra": true }
-      ]
+     "name": "Seedance 2.0 · 720p",
+     "cps": 4.5,
+     "audio": false,
+     "q": 4,
+     "minPlan": 1
     },
     {
-      "id": "runway", "name": "Runway", "color": "#7c5cd6", "url": "https://runwayml.com/pricing",
-      "features": { "audio": false, "chars": true, "lips": false, "hd": true, "multi": false },
-      "free": { "en": "125 one-time free credits", "ar": "125 رصيداً مجانياً لمرة واحدة" },
-      "rollover": true,
-      "strengths": { "en": "Pro filmmaking toolkit: Gen-4.5 with strong prompt adherence, references, Aleph video editing and 4K upscaling. Max plan rolls credits over one month.",
-                     "ar": "أدوات صناعة أفلام احترافية: Gen-4.5 بدقة عالية في تنفيذ البرومبت، ومراجع، وتعديل فيديو Aleph، وتكبير 4K. خطة Max تنقل الرصيد لشهر واحد." },
-      "warn": { "en": "Gen-4.5 outputs 720p and has no native audio.", "ar": "Gen-4.5 يخرج بدقة 720p وبدون صوت مدمج." },
-      "models": [
-        { "name": "Gen-4 Turbo", "cps": 5, "audio": false, "q": 3, "minPlan": 0 },
-        { "name": "Gen-4.5", "cps": 12, "audio": false, "q": 4, "minPlan": 0 }
-      ],
-      "plans": [
-        { "name": "Standard", "price": 15, "credits": 625, "annual": 12 },
-        { "name": "Pro", "price": 35, "credits": 2250, "annual": 28 },
-        { "name": "Max", "price": 95, "credits": 9500, "annual": 76 }
-      ]
-    },
-    {
-      "id": "luma", "name": "Luma", "color": "#d0466f", "url": "https://lumalabs.ai/pricing",
-      "features": { "audio": false, "chars": false, "lips": false, "hd": true, "multi": true },
-      "free": { "en": "Trial credits only", "ar": "رصيد تجريبي فقط" },
-      "rollover": false,
-      "strengths": { "en": "Ray3 with true 16-bit HDR and EXR export for color grading, cheap Draft mode for testing ideas.",
-                     "ar": "Ray3 بتقنية HDR حقيقية 16 بت وتصدير EXR لتصحيح الألوان، ووضع Draft رخيص لتجربة الأفكار." },
-      "warn": { "en": "Full-quality 1080p costs many credits per second.", "ar": "دقة 1080p الكاملة تستهلك رصيداً كبيراً لكل ثانية." },
-      "models": [
-        { "name": "Ray3 · Draft", "cps": 12, "audio": false, "q": 3, "minPlan": 0 },
-        { "name": "Ray3 · 1080p", "cps": 66, "audio": false, "q": 5, "minPlan": 0 }
-      ],
-      "plans": [
-        { "name": "Plus", "price": 30, "credits": 10000 }
-      ]
-    },
-    {
-      "id": "hailuo", "name": "Hailuo (MiniMax)", "color": "#e07b28", "url": "https://hailuoai.video",
-      "features": { "audio": false, "chars": false, "lips": false, "hd": false, "multi": false },
-      "free": { "en": "One-time welcome credits", "ar": "رصيد ترحيبي لمرة واحدة" },
-      "rollover": false,
-      "strengths": { "en": "Very low cost per second with strong, natural motion. Good for high-volume B-roll and social clips.",
-                     "ar": "تكلفة منخفضة جداً لكل ثانية مع حركة قوية وطبيعية. مناسب لكميات كبيرة من لقطات B-roll والمقاطع القصيرة." },
-      "warn": { "en": "1080p credit rate is an estimate.", "ar": "تكلفة دقة 1080p تقديرية." },
-      "models": [
-        { "name": "Hailuo · 768p", "cps": 4.2, "audio": false, "q": 3, "minPlan": 0 },
-        { "name": "Hailuo · 1080p (est.)", "cps": 8.4, "audio": false, "q": 4, "minPlan": 0 }
-      ],
-      "plans": [
-        { "name": "Standard", "price": 14.99, "credits": 1000 },
-        { "name": "Pro", "price": 54.99, "credits": 4500 },
-        { "name": "Master", "price": 119.99, "credits": 10000 },
-        { "name": "Max", "price": 199.99, "credits": 20000 }
-      ]
+     "name": "Veo 3 · audio",
+     "cps": 7.25,
+     "audio": true,
+     "q": 5,
+     "minPlan": 1
     }
-  ]
+   ],
+   "plans": [
+    {
+     "name": "Starter",
+     "price": 19,
+     "credits": 270
+    },
+    {
+     "name": "Plus",
+     "price": 59,
+     "credits": 1200,
+     "annual": 47
+    },
+    {
+     "name": "Ultra",
+     "price": 129,
+     "credits": 3000,
+     "annual": 99
+    }
+   ]
+  },
+  {
+   "id": "kling",
+   "name": "Kling AI",
+   "color": "#18a058",
+   "url": "https://klingai.com/pricing",
+   "features": {
+    "audio": true,
+    "chars": true,
+    "lips": true,
+    "hd": true,
+    "multi": false
+   },
+   "free": {
+    "en": "Free tier with daily credits",
+    "ar": "خطة مجانية برصيد يومي"
+   },
+   "rollover": false,
+   "strengths": {
+    "en": "Excellent value. Kling 3.0 makes multi-shot scenes up to 15s with native audio, character references and native 4K.",
+    "ar": "قيمة ممتازة. Kling 3.0 يصنع مشاهد متعددة اللقطات حتى 15 ثانية مع صوت مدمج ومرجع للشخصيات ودقة 4K أصلية."
+   },
+   "warn": {
+    "en": "First-month prices are discounted; renewal prices are used here.",
+    "ar": "أسعار الشهر الأول مخفّضة؛ هنا نستخدم سعر التجديد."
+   },
+   "models": [
+    {
+     "name": "Kling 3.0 · 720p",
+     "cps": 6,
+     "audio": false,
+     "q": 3,
+     "minPlan": 0
+    },
+    {
+     "name": "Kling 3.0 · 1080p",
+     "cps": 8,
+     "audio": false,
+     "q": 4,
+     "minPlan": 0
+    },
+    {
+     "name": "Kling 3.0 · 1080p + audio",
+     "cps": 12,
+     "audio": true,
+     "q": 4,
+     "minPlan": 0
+    }
+   ],
+   "plans": [
+    {
+     "name": "Standard",
+     "price": 8.8,
+     "credits": 660
+    },
+    {
+     "name": "Pro",
+     "price": 32.56,
+     "credits": 3000
+    },
+    {
+     "name": "Premier",
+     "price": 80.96,
+     "credits": 8000
+    },
+    {
+     "name": "Ultra",
+     "price": 159.99,
+     "credits": 26000
+    }
+   ]
+  },
+  {
+   "id": "flow",
+   "name": "Google Flow (Veo)",
+   "color": "#3b7bea",
+   "url": "https://labs.google/fx/tools/flow",
+   "features": {
+    "audio": true,
+    "chars": true,
+    "lips": true,
+    "hd": true,
+    "multi": false
+   },
+   "free": {
+    "en": "50 free credits every day",
+    "ar": "50 رصيداً مجانياً كل يوم"
+   },
+   "rollover": false,
+   "strengths": {
+    "en": "Veo 3.1 with native sound and dialogue, Scenebuilder, ingredients-to-video for consistency, extend and object editing. Ultra halves Lite/Fast costs.",
+    "ar": "Veo 3.1 بصوت وحوار مدمجين، وأداة Scenebuilder، وتثبيت العناصر بين المشاهد، وتمديد اللقطات وتعديل العناصر. خطة Ultra تخفّض تكلفة Lite وFast للنصف."
+   },
+   "warn": {
+    "en": "Plan includes Gemini and storage, not only video. Clips are up to 8 seconds.",
+    "ar": "الخطة تشمل Gemini والتخزين أيضاً. المقاطع حتى 8 ثوانٍ."
+   },
+   "models": [
+    {
+     "name": "Veo 3.1 Lite",
+     "cps": 1.25,
+     "audio": true,
+     "q": 3,
+     "minPlan": 0,
+     "ultraHalf": true
+    },
+    {
+     "name": "Veo 3.1 Fast",
+     "cps": 2.5,
+     "audio": true,
+     "q": 4,
+     "minPlan": 0,
+     "ultraHalf": true
+    },
+    {
+     "name": "Veo 3.1 Quality",
+     "cps": 12.5,
+     "audio": true,
+     "q": 5,
+     "minPlan": 0
+    }
+   ],
+   "plans": [
+    {
+     "name": "Google AI Plus",
+     "price": 4.99,
+     "credits": 200
+    },
+    {
+     "name": "Google AI Pro",
+     "price": 19.99,
+     "credits": 1000
+    },
+    {
+     "name": "Google AI Ultra",
+     "price": 99.99,
+     "credits": 10000,
+     "ultra": true
+    },
+    {
+     "name": "Google AI Ultra 20x",
+     "price": 199.99,
+     "credits": 25000,
+     "ultra": true
+    }
+   ]
+  },
+  {
+   "id": "runway",
+   "name": "Runway",
+   "color": "#7c5cd6",
+   "url": "https://runwayml.com/pricing",
+   "features": {
+    "audio": false,
+    "chars": true,
+    "lips": false,
+    "hd": true,
+    "multi": false
+   },
+   "free": {
+    "en": "125 one-time free credits",
+    "ar": "125 رصيداً مجانياً لمرة واحدة"
+   },
+   "rollover": true,
+   "strengths": {
+    "en": "Pro filmmaking toolkit: Gen-4.5 with strong prompt adherence, references, Aleph video editing and 4K upscaling. Max plan rolls credits over one month.",
+    "ar": "أدوات صناعة أفلام احترافية: Gen-4.5 بدقة عالية في تنفيذ البرومبت، ومراجع، وتعديل فيديو Aleph، وتكبير 4K. خطة Max تنقل الرصيد لشهر واحد."
+   },
+   "warn": {
+    "en": "Gen-4.5 outputs 720p and has no native audio.",
+    "ar": "Gen-4.5 يخرج بدقة 720p وبدون صوت مدمج."
+   },
+   "models": [
+    {
+     "name": "Gen-4 Turbo",
+     "cps": 5,
+     "audio": false,
+     "q": 3,
+     "minPlan": 0
+    },
+    {
+     "name": "Gen-4.5",
+     "cps": 12,
+     "audio": false,
+     "q": 4,
+     "minPlan": 0
+    }
+   ],
+   "plans": [
+    {
+     "name": "Standard",
+     "price": 15,
+     "credits": 625,
+     "annual": 12
+    },
+    {
+     "name": "Pro",
+     "price": 35,
+     "credits": 2250,
+     "annual": 28
+    },
+    {
+     "name": "Max",
+     "price": 95,
+     "credits": 9500,
+     "annual": 76
+    }
+   ]
+  },
+  {
+   "id": "luma",
+   "name": "Luma",
+   "color": "#d0466f",
+   "url": "https://lumalabs.ai/pricing",
+   "features": {
+    "audio": false,
+    "chars": false,
+    "lips": false,
+    "hd": true,
+    "multi": true
+   },
+   "free": {
+    "en": "Trial credits only",
+    "ar": "رصيد تجريبي فقط"
+   },
+   "rollover": false,
+   "strengths": {
+    "en": "Ray3 with true 16-bit HDR and EXR export for color grading, cheap Draft mode for testing ideas.",
+    "ar": "Ray3 بتقنية HDR حقيقية 16 بت وتصدير EXR لتصحيح الألوان، ووضع Draft رخيص لتجربة الأفكار."
+   },
+   "warn": {
+    "en": "Full-quality 1080p costs many credits per second.",
+    "ar": "دقة 1080p الكاملة تستهلك رصيداً كبيراً لكل ثانية."
+   },
+   "models": [
+    {
+     "name": "Ray3 · Draft",
+     "cps": 12,
+     "audio": false,
+     "q": 3,
+     "minPlan": 0
+    },
+    {
+     "name": "Ray3 · 1080p",
+     "cps": 66,
+     "audio": false,
+     "q": 5,
+     "minPlan": 0
+    }
+   ],
+   "plans": [
+    {
+     "name": "Plus",
+     "price": 30,
+     "credits": 10000
+    }
+   ]
+  },
+  {
+   "id": "hailuo",
+   "name": "Hailuo (MiniMax)",
+   "color": "#e07b28",
+   "url": "https://hailuoai.video",
+   "features": {
+    "audio": false,
+    "chars": false,
+    "lips": false,
+    "hd": false,
+    "multi": false
+   },
+   "free": {
+    "en": "One-time welcome credits",
+    "ar": "رصيد ترحيبي لمرة واحدة"
+   },
+   "rollover": false,
+   "strengths": {
+    "en": "Very low cost per second with strong, natural motion. Good for high-volume B-roll and social clips.",
+    "ar": "تكلفة منخفضة جداً لكل ثانية مع حركة قوية وطبيعية. مناسب لكميات كبيرة من لقطات B-roll والمقاطع القصيرة."
+   },
+   "warn": {
+    "en": "1080p credit rate is an estimate.",
+    "ar": "تكلفة دقة 1080p تقديرية."
+   },
+   "models": [
+    {
+     "name": "Hailuo · 768p",
+     "cps": 4.2,
+     "audio": false,
+     "q": 3,
+     "minPlan": 0
+    },
+    {
+     "name": "Hailuo · 1080p (est.)",
+     "cps": 8.4,
+     "audio": false,
+     "q": 4,
+     "minPlan": 0
+    }
+   ],
+   "plans": [
+    {
+     "name": "Standard",
+     "price": 14.99,
+     "credits": 1000
+    },
+    {
+     "name": "Pro",
+     "price": 54.99,
+     "credits": 4500
+    },
+    {
+     "name": "Master",
+     "price": 119.99,
+     "credits": 10000
+    },
+    {
+     "name": "Max",
+     "price": 199.99,
+     "credits": 20000
+    }
+   ]
+  }
+ ]
 }

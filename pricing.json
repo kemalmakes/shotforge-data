@@ -1,27 +1,194 @@
 {
-  "version": 1,
-  "updated": "2026-11-11",
-  "currency": "USD",
-  "notes": "List API prices per second of generated video (video) and per image (image). Sources: Google Gemini API, Kling, Runway, Luma, MiniMax official pages and public price indexes (Oct-Nov 2026). Some rows are reseller prices where no official rate is published. Sora 2 excluded: API retired Sep 24, 2026.",
-  "defaults": { "videoAttempts": 3, "imageAttempts": 2, "characterImages": 5 },
-  "video": [
-    { "id": "veo31",        "name": "Veo 3.1",            "vendor": "Google",    "res": "1080p", "price": 0.40,  "priceAudio": 0.40, "minClip": 4, "maxClip": 8,  "quality": 5, "source": "Gemini API" },
-    { "id": "veo31fast",    "name": "Veo 3.1 Fast",       "vendor": "Google",    "res": "1080p", "price": 0.12,  "priceAudio": 0.12, "minClip": 4, "maxClip": 8,  "quality": 4, "source": "Gemini API" },
-    { "id": "veo31lite",    "name": "Veo 3.1 Lite",       "vendor": "Google",    "res": "1080p", "price": 0.08,  "priceAudio": 0.08, "minClip": 4, "maxClip": 8,  "quality": 3, "source": "Gemini API" },
-    { "id": "kling30pro",   "name": "Kling 3.0 Pro",      "vendor": "Kuaishou",  "res": "1080p", "price": 0.112, "priceAudio": 0.14, "minClip": 3, "maxClip": 15, "quality": 4, "source": "Kling API (1 unit = $0.14)" },
-    { "id": "kling30std",   "name": "Kling 3.0 Standard", "vendor": "Kuaishou",  "res": "720p",  "price": 0.084, "priceAudio": 0.112,"minClip": 3, "maxClip": 15, "quality": 3, "source": "Kling API (1 unit = $0.14)" },
-    { "id": "runway45",     "name": "Runway Gen-4.5",     "vendor": "Runway",    "res": "720p",  "price": 0.12,  "priceAudio": null, "minClip": 2, "maxClip": 10, "quality": 4, "source": "Runway (12 credits/s, $0.01/credit)" },
-    { "id": "hailuoh3",     "name": "Hailuo MiniMax-H3",  "vendor": "MiniMax",   "res": "2K",    "price": 0.13,  "priceAudio": 0.13, "minClip": 6, "maxClip": 10, "quality": 4, "source": "MiniMax Open Platform" },
-    { "id": "luma32hd",     "name": "Luma Ray3.2",        "vendor": "Luma",      "res": "1080p", "price": 0.24,  "priceAudio": null, "minClip": 5, "maxClip": 10, "quality": 4, "source": "Luma API ($1.20 per 5s clip)" },
-    { "id": "luma32",       "name": "Luma Ray3.2",        "vendor": "Luma",      "res": "720p",  "price": 0.06,  "priceAudio": null, "minClip": 5, "maxClip": 10, "quality": 3, "source": "Luma API ($0.30 per 5s clip)" },
-    { "id": "seedance20f",  "name": "Seedance 2.0 Fast",  "vendor": "ByteDance", "res": "720p",  "price": 0.09,  "priceAudio": null, "minClip": 5, "maxClip": 10, "quality": 3, "source": "ModelArk (approx.)" },
-    { "id": "wan30",        "name": "Wan 3.0",            "vendor": "Alibaba",   "res": "720p",  "price": 0.10,  "priceAudio": null, "minClip": 5, "maxClip": 10, "quality": 3, "source": "Reseller rate (approx.)" }
-  ],
-  "image": [
-    { "id": "nb2",     "name": "Nano Banana 2",      "vendor": "Google",          "price": 0.067, "quality": 4 },
-    { "id": "nb2lite", "name": "Nano Banana 2 Lite", "vendor": "Google",          "price": 0.034, "quality": 3 },
-    { "id": "nbpro",   "name": "Nano Banana Pro",    "vendor": "Google",          "price": 0.134, "quality": 5 },
-    { "id": "gpti2m",  "name": "GPT Image 2 (medium)","vendor": "OpenAI",         "price": 0.053, "quality": 4 },
-    { "id": "flux2p",  "name": "FLUX.2 Pro",         "vendor": "Black Forest Labs","price": 0.03, "quality": 4 }
-  ]
+ "version": 1,
+ "updated": "2026-11-14",
+ "currency": "USD",
+ "notes": "List API prices per second of generated video (video) and per image (image). Sources: Google Gemini API, Kling, Runway, Luma, MiniMax official pages and public price indexes (Oct-Nov 2026). Some rows are reseller prices where no official rate is published. Sora 2 excluded: API retired Sep 24, 2026.",
+ "defaults": {
+  "videoAttempts": 3,
+  "imageAttempts": 2,
+  "characterImages": 5
+ },
+ "video": [
+  {
+   "id": "veo31",
+   "name": "Veo 3.1",
+   "vendor": "Google",
+   "res": "1080p",
+   "price": 0.4,
+   "priceAudio": 0.4,
+   "minClip": 4,
+   "maxClip": 8,
+   "quality": 5,
+   "source": "Gemini API"
+  },
+  {
+   "id": "veo31fast",
+   "name": "Veo 3.1 Fast",
+   "vendor": "Google",
+   "res": "1080p",
+   "price": 0.12,
+   "priceAudio": 0.12,
+   "minClip": 4,
+   "maxClip": 8,
+   "quality": 4,
+   "source": "Gemini API"
+  },
+  {
+   "id": "veo31lite",
+   "name": "Veo 3.1 Lite",
+   "vendor": "Google",
+   "res": "1080p",
+   "price": 0.08,
+   "priceAudio": 0.08,
+   "minClip": 4,
+   "maxClip": 8,
+   "quality": 3,
+   "source": "Gemini API"
+  },
+  {
+   "id": "kling30pro",
+   "name": "Kling 3.0 Pro",
+   "vendor": "Kuaishou",
+   "res": "1080p",
+   "price": 0.112,
+   "priceAudio": 0.14,
+   "minClip": 3,
+   "maxClip": 15,
+   "quality": 4,
+   "source": "Kling API (1 unit = $0.14)"
+  },
+  {
+   "id": "kling30std",
+   "name": "Kling 3.0 Standard",
+   "vendor": "Kuaishou",
+   "res": "720p",
+   "price": 0.084,
+   "priceAudio": 0.112,
+   "minClip": 3,
+   "maxClip": 15,
+   "quality": 3,
+   "source": "Kling API (1 unit = $0.14)"
+  },
+  {
+   "id": "runway45",
+   "name": "Runway Gen-4.5",
+   "vendor": "Runway",
+   "res": "720p",
+   "price": 0.12,
+   "priceAudio": null,
+   "minClip": 2,
+   "maxClip": 10,
+   "quality": 4,
+   "source": "Runway (12 credits/s, $0.01/credit)"
+  },
+  {
+   "id": "hailuoh3",
+   "name": "Hailuo MiniMax-H3",
+   "vendor": "MiniMax",
+   "res": "2K",
+   "price": 0.13,
+   "priceAudio": 0.13,
+   "minClip": 6,
+   "maxClip": 10,
+   "quality": 4,
+   "source": "MiniMax Open Platform"
+  },
+  {
+   "id": "hailuoh3_768",
+   "name": "Hailuo MiniMax-H3",
+   "vendor": "MiniMax",
+   "res": "768p",
+   "price": 0.08,
+   "priceAudio": 0.08,
+   "minClip": 6,
+   "maxClip": 10,
+   "quality": 3,
+   "source": "MiniMax Open Platform ($0.08/s at 768P)"
+  },
+  {
+   "id": "luma32hd",
+   "name": "Luma Ray3.2",
+   "vendor": "Luma",
+   "res": "1080p",
+   "price": 0.24,
+   "priceAudio": null,
+   "minClip": 5,
+   "maxClip": 10,
+   "quality": 4,
+   "source": "Luma API ($1.20 per 5s clip)"
+  },
+  {
+   "id": "luma32",
+   "name": "Luma Ray3.2",
+   "vendor": "Luma",
+   "res": "720p",
+   "price": 0.06,
+   "priceAudio": null,
+   "minClip": 5,
+   "maxClip": 10,
+   "quality": 3,
+   "source": "Luma API ($0.30 per 5s clip)"
+  },
+  {
+   "id": "seedance20f",
+   "name": "Seedance 2.0 Fast",
+   "vendor": "ByteDance",
+   "res": "720p",
+   "price": 0.09,
+   "priceAudio": null,
+   "minClip": 5,
+   "maxClip": 10,
+   "quality": 3,
+   "source": "ModelArk (approx.)"
+  },
+  {
+   "id": "wan30",
+   "name": "Wan 3.0",
+   "vendor": "Alibaba",
+   "res": "720p",
+   "price": 0.1,
+   "priceAudio": null,
+   "minClip": 5,
+   "maxClip": 10,
+   "quality": 3,
+   "source": "Reseller rate (approx.)"
+  }
+ ],
+ "image": [
+  {
+   "id": "nb2",
+   "name": "Nano Banana 2",
+   "vendor": "Google",
+   "price": 0.067,
+   "quality": 4
+  },
+  {
+   "id": "nb2lite",
+   "name": "Nano Banana 2 Lite",
+   "vendor": "Google",
+   "price": 0.034,
+   "quality": 3
+  },
+  {
+   "id": "nbpro",
+   "name": "Nano Banana Pro",
+   "vendor": "Google",
+   "price": 0.134,
+   "quality": 5
+  },
+  {
+   "id": "gpti2m",
+   "name": "GPT Image 2 (medium)",
+   "vendor": "OpenAI",
+   "price": 0.053,
+   "quality": 4
+  },
+  {
+   "id": "flux2p",
+   "name": "FLUX.2 Pro",
+   "vendor": "Black Forest Labs",
+   "price": 0.03,
+   "quality": 4
+  }
+ ]
 }
