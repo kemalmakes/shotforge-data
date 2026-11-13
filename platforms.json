@@ -1,7 +1,7 @@
 {
  "version": 1,
  "updated": "2026-11-14",
- "notes": "Consumer app plans (monthly billing, USD). Credit rates are approximate, per second of generated video. Sources: vendor pricing pages and help docs as reported Sep-Nov 2026. Prices change often; confirm on each pricing page.",
+ "notes": "Consumer app plans (USD). price = regular monthly price; annual = per-month price when billed yearly; promo = first-month offer (shown, not used in estimates). Credit rates approximate, per second of video. Checked 14 Nov 2026; confirm on each pricing page.",
  "platforms": [
   {
    "id": "higgsfield",
@@ -76,7 +76,8 @@
      "credits": 3000,
      "annual": 99
     }
-   ]
+   ],
+   "checked": "2026-11-14"
   },
   {
    "id": "kling",
@@ -130,24 +131,33 @@
     {
      "name": "Standard",
      "price": 8.8,
-     "credits": 660
+     "credits": 660,
+     "annual": 6.6,
+     "promo": 6.99
     },
     {
      "name": "Pro",
      "price": 32.56,
-     "credits": 3000
+     "credits": 3000,
+     "annual": 24.42,
+     "promo": 25.99
     },
     {
      "name": "Premier",
      "price": 80.96,
-     "credits": 8000
+     "credits": 8000,
+     "annual": 60.72,
+     "promo": 64.99
     },
     {
      "name": "Ultra",
      "price": 159.99,
-     "credits": 26000
+     "credits": 26000,
+     "annual": 119.17,
+     "promo": 127.99
     }
-   ]
+   ],
+   "checked": "2026-11-14"
   },
   {
    "id": "flow",
@@ -222,7 +232,8 @@
      "credits": 25000,
      "ultra": true
     }
-   ]
+   ],
+   "checked": "2026-11-14"
   },
   {
    "id": "runway",
@@ -284,7 +295,8 @@
      "credits": 9500,
      "annual": 76
     }
-   ]
+   ],
+   "checked": "2026-11-14"
   },
   {
    "id": "luma",
@@ -331,9 +343,11 @@
     {
      "name": "Plus",
      "price": 30,
-     "credits": 10000
+     "credits": 10000,
+     "annual": 25
     }
-   ]
+   ],
+   "checked": "2026-11-14"
   },
   {
    "id": "hailuo",
@@ -380,24 +394,29 @@
     {
      "name": "Standard",
      "price": 14.99,
-     "credits": 1000
+     "credits": 1000,
+     "annual": 8.4,
+     "promo": 7.99
     },
     {
      "name": "Pro",
      "price": 54.99,
-     "credits": 4500
+     "credits": 4500,
+     "promo": 24.99
     },
     {
      "name": "Master",
      "price": 119.99,
-     "credits": 10000
+     "credits": 10000,
+     "promo": 63.99
     },
     {
      "name": "Max",
      "price": 199.99,
      "credits": 20000
     }
-   ]
+   ],
+   "checked": "2026-11-14"
   }
  ]
 }
